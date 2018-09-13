@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Comparison - Web Visualization Dashboard (Latitude)</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" style="color:white; background-color:#00796b; margin-left:30px;" href="index.html">Lattitude</a>
+			</div>
+
+ 		<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="maxTemp.html">Max Temperature</a></li>
+								<li><a href="humidity.html">Humidity</a></li>
+								<li><a href="cloudiness.html">Cloudiness</a></li>
+								<li><a href="windspeed.html">Wind Speed</a></li>
+							</ul>	
+					<li><a href="comparison.html">Comparison</a></li>
+					<li><a href="csvToHtml.html">Data</a></li>
+
+					</li>
+				</ul>			
+			<!-- /.navbar-collapse -->
+			</div>
+		<!-- /.container-fluid -->
+		</div>
+	</nav>
+	
+	<div class="container-fluid">
+		<div class="row row-format">
+			<h1>Comparison: Latitude vs X</h1>
+			<div class="col-md-12  bg-light">
+				<hr size="20">
+				<h2>Click any plot to get an in-depth analysis</h2>
+				<div class="col-md-6 col-lg-6 ">
+					<div class="caption">
+						<h3>vs. Max Temperature</h3>
+					</div>
+					<a href="maxTemp.html"><img alt="Fig1"  style="padding-right:10px width:50%" src="Resources\assets\images\Fig1.png" class="img-fluid img-thumbnail"></a>
+					<div class="caption">
+						<h3>vs. Humidity</h3>
+					</div>
+					<a href="humidity.html"><img alt="Fig1"  style="padding-right:10px width:50%" src="Resources\assets\images\Fig2.png" class="img-fluid img-thumbnail"></a>
+				</div>
+				<div class="col-md-6 col-lg-6">
+					<div class="caption">
+						<h3>vs. Cloudiness</h3>
+					</div>
+					<a href="cloudiness.html"><img alt="Fig1"  style="padding-right:10px width:50%" src="Resources\assets\images\Fig3.png" class="img-fluid img-thumbnail"></a>
+					<div class="caption">
+						<h3>vs. Wind Speed</h3>
+					</div>
+					<a href="windspeed.html"><img alt="Fig1"  style="padding-right:10px width:50%" src="Resources\assets\images\Fig4.png" class="img-fluid img-thumbnail"></a>
+				</div>	
+				<br><br>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

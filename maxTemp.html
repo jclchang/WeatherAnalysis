@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude vs. Max Temp - Web Visualization Dashboard</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" style="color:white; background-color:#00796b; margin-left:30px;" href="index.html">Lattitude</a>
+			</div>
+
+ 		<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="maxTemp.html">Max Temperature</a></li>
+								<li><a href="humidity.html">Humidity</a></li>
+								<li><a href="cloudiness.html">Cloudiness</a></li>
+								<li><a href="windspeed.html">Wind Speed</a></li>
+							</ul>	
+					<li><a href="comparison.html">Comparison</a></li>
+					<li><a href="#">Data</a></li>
+
+					</li>
+				</ul>			
+			<!-- /.navbar-collapse -->
+			</div>
+		<!-- /.container-fluid -->
+		</div>
+	</nav>
+	
+	<div class="container-fluid container-bg">
+		<div class="row row-format">
+			<div class="col-md-12 col-md-6 div-format">
+				<figure class="figure">
+					<img src="Resources\assets\images\Fig1.png" class="figure-img img-fluid rounded" style="padding-right:10px width:80%" alt="Latitude vs Max Temperature">
+					<figcaption class="figure-caption text-left">This is a plot of Latitude vs. Maximum Temperatureture.  This plot shows there is a correlation between latitude 
+							   and maximum temperature. Cities near equator tend to have the highest temperatures, and cities farther away from 
+							   the equator tend to have lower temperatures.
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

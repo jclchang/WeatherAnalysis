@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Home - Web Visualization Dashboard (Latitude)</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" style="color:white; background-color:#00796b; margin-left:30px;" href="index.html">Lattitude</a>
+			</div>
+
+ 		<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="maxTemp.html">Max Temperature</a></li>
+								<li><a href="humidity.html">Humidity</a></li>
+								<li><a href="cloudiness.html">Cloudiness</a></li>
+								<li><a href="windspeed.html">Wind Speed</a></li>
+							</ul>	
+					<li><a href="comparison.html">Comparison</a></li>
+					<li><a href="csvToHtml.html">Data</a></li>
+
+					</li>
+				</ul>			
+			<!-- /.navbar-collapse -->
+			</div>
+		<!-- /.container-fluid -->
+		</div>
+	</nav>
+	
+	<div class="container-fluid container-bg">
+		<div class="row row-format">
+			<div class="col-lg-6 div-format">
+				<h1><strong>Summary: Latitude vs. X</strong></h1>
+				<hr style="height:5px;color:#000">
+				<div class="thumbnail">
+					<img alt="Fig1" style="width: 300px; height: 165px;float:left;padding-right:10px" src="Resources\assets\images\Fig1.png" class="img-responsive">
+							<p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+								To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on 
+								over 500 Cities.
+								<br><br>
+								After assembling the datasets, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+								Factors we looked at included: temporature, cloudiness, wind speed, and humidity. This site provides the 
+								source data and visualizations created as part of the analysis, as well as explanations and descriptions of 
+								any trends and correlations witnessed.
+								<br>
+							</p>
+				</div>
+			</div>
+	
+			<!--Second of Two Columns-->
+			<div class="col-lg-4 div-format">
+				<h1><strong>Visualizations</strong></h1>
+				<hr size="20">
+					<!--img alt="Fig1"  style="width: 200px; height: 150px; float:left;  padding-right:10px" src="Resources\assets\images\Fig1.png" class="img-responsive"-->
+					<img alt="Fig1"  style="padding-right:10px width: 200px; height: 150px" src="Resources\assets\images\Fig1.png" class="img-fluid img-thumbnail">
+					<img alt="Fig2"  style="padding-right:10px width: 200px; height: 150px" src="Resources\assets\images\Fig2.png" class="img-fluid img-thumbnail">
+					<img alt="Fig3"  style="padding-right:10px width: 200px; height: 150px" src="Resources\assets\images\Fig3.png" class="img-fluid img-thumbnail">
+					<img alt="Fig4"  style="padding-right:10px width: 200px; height: 150px" src="Resources\assets\images\Fig4.png" class="img-fluid img-thumbnail">			
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
